@@ -1,0 +1,102 @@
+div.container.content {
+    width: 100%;
+    background-color: #aaa;
+    background-image: url('/images/frenchstucco.png');
+    padding: 20px 0;
+}
+
+.frontpage-category-photos-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    max-height: 170px;
+    max-width: 170px;
+    margin: 17px;
+    overflow: hidden;
+}
+
+.frontpage-category-photos {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border: 1px solid #000;
+    /*
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      */
+    box-shadow: 0px 1px 3.5px 0px #aaa;
+    border-radius: 20px;
+    vertical-align: top;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.frontpage-category-photos-wrapper:hover {
+    overflow: visible;
+    z-index: 10000;
+}
+
+.frontpage-category-photos:hover {
+    height: 320px;
+    width: 320px;
+    /*
+    top: -130px;
+    left: -130px;
+*/
+    margin: 2px;
+    border: 2px solid coral; /*deepskyblue;*/
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.frontpage-category-photos img {
+    max-height: 190px;
+    max-width: 190px;
+}
+
+.frontpage-category-photos:hover img {
+    max-height: 320px;
+    max-width: 320px;
+}
+
+.frontpage-category-photos a {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+    .frontpage-category-photos a div.category-img-wrapper {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center; /* align the inline(-block) elements horizontally */
+        font: 0/0 a; /* remove the gap between inline(-block) elements */
+        /*    height: calc(100% - 30px); */
+        height: 100%;
+    }
+
+        .frontpage-category-photos a div.category-img-wrapper:before { /* create a full-height inline block pseudo=element */
+            content: ' ';
+            display: inline-block;
+            vertical-align: middle; /* vertical alignment of the inline element */
+            height: calc(100% - 30px);
+        }
+
+    .frontpage-category-photos a div.category-name {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+.frontpage-category-photos:hover a div.category-name {
+    color: coral; /* deepskyblue; */
+    font-size: 1.1em;
+}

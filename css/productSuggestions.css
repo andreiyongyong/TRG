@@ -1,0 +1,51 @@
+/*
+    productSuggestions.css - used in products.aspx
+*/ 
+
+#productSuggestionsPageBottom
+{
+    display:inline-block; 
+    width:750px; 
+    overflow:hidden;
+}
+
+#productSuggestionsPageBottomInnerDiv
+{
+    width:2000px; 
+    position:relative; 
+    left:0;
+}
+
+.productSuggestions_productWrapper
+{
+    max-width: 160px;
+    min-height:280px;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align:top;
+    /*transition: width 2s; */
+}
+
+.productSuggestions_productWrapper img
+{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+                                                      
+.arrow_left,
+.arrow_right
+{
+    background-image:url('../images/arrow_spritesheet.png');
+    display: inline-block;
+    width:24px; 
+    height:38px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.arrow_left { background-position: 0 0; }
+.arrow_left:hover { background-position: 0 -76px; }
+
+.arrow_right { background-position: -30px 0;  }
+.arrow_right:hover { background-position: -30px -76px; }

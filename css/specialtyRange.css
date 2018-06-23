@@ -1,0 +1,323 @@
+body
+{
+    background-image:none;
+    position: relative;
+    top:120px;
+}
+
+nav .navbar-default
+{
+    background-color: rgb(58, 87, 149);
+    background: -webkit-linear-gradient(right, #676767, #3F3F3F);
+    background: -moz-linear-gradient(right, #676767, #3F3F3F);
+    background: -o-linear-gradient(right, #676767, #3F3F3F);
+    background: linear-gradient(to bottom, #676767, #3F3F3F);
+
+    margin:0;
+    padding:0;
+    border:0;
+    border-radius:0;
+}
+
+
+.navbar-default .navbar-nav > li > a
+{
+    font-size:14px;
+    color:#fff;
+}
+
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover
+{
+    color:#333;
+    font-size:20px;
+    font-weight:bold;
+    background: transparent;
+
+    text-shadow: 
+        0px 2px 24px #fff,
+        2px -2px 2px #fff;
+}
+
+
+form#quick-search
+{
+    padding-left:0;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+
+form#quick-search span
+{
+    padding-left:5px;
+}
+
+form#quick-search:hover
+{
+    cursor:pointer;
+}
+
+/* 
+    login 
+*/
+li.btnLogin
+{
+    width:130px;
+    display:inline-block;
+}
+li.welcomeUser
+{
+    margin: 10px 30px 10px 0;
+    font-size: 14px;
+    color:#fff;
+    display:inline-block;
+}
+
+
+#btnLogin,
+#btnLogout
+{
+    color:#fff;
+    font-size:14px;
+}
+#btnLogin:hover,
+#btnLogout:hover
+{
+    cursor:pointer;
+    color:#333;
+    font-size:20px;
+}
+
+#modalLogin input
+{
+    width: 220px;
+}
+
+#modalLogin button[type="submit"].btn.btn-default
+{
+    width: 70px;
+    background-color: rgb(58, 87, 149);
+    background: -webkit-linear-gradient(right, red, darkred);
+    background: -moz-linear-gradient(right, red, darkred);
+    background: -o-linear-gradient(right, red, darkred);
+    background: linear-gradient(to bottom, red, darkred);
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+}
+
+#modalLogin button[type="submit"].btn.btn-default:hover
+{
+    font-weight:bold;
+}
+
+#welcomeUser
+{
+    margin-top:5px;
+    padding:0;
+}
+
+.red-nav-separator
+{
+    background-color: #ff0000;
+    width:100%;
+    height:10px;
+    padding:0;
+    margin:0;
+}
+
+.container.category-nav 
+{
+    width: 80%;
+}
+
+li.category-nav > a
+{
+    color: #fff;
+    border-radius:10px;
+    padding: 5px 10px;
+    margin: auto 10px;
+    font-size: 14px;
+}
+
+li.category-nav > a:active,
+li.category-nav > a:hover
+{
+    color: #23527c;
+    font-weight: bold;
+    border-radius:10px;
+    margin: auto 8px;
+}
+
+
+#slides
+{
+    position:relative;
+    margin:0 auto;
+    width: 750px;
+}
+
+.slides_container
+{
+    width: 100%;
+}
+
+#slides ul.pagination
+{
+    display:none;
+}
+
+div.container.content
+{
+    width: 100%;
+    background-color:#aaa;
+    background-image: url('/images/frenchstucco.png');
+    padding: 20px 0;
+}
+
+.frontpage-category-photos-wrapper
+{
+    position: relative;
+    display: inline-block;
+    height:170px;
+    width:170px;
+    max-height:170px;
+    max-width:170px;
+    margin: 17px;
+    overflow:hidden;
+}
+
+.frontpage-category-photos
+{
+    position: absolute;
+    height:170px;
+    width:170px;
+    border: 1px solid #000;
+    /*
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      */
+    box-shadow: 0px 1px 3.5px 0px #aaa;
+    border-radius: 20px;
+    vertical-align:top;
+    overflow:hidden;
+    background-color:#fff;
+}
+
+.frontpage-category-photos-wrapper:hover
+{
+    overflow:visible;
+    z-index:10000;
+}
+
+.frontpage-category-photos:hover
+{
+    height:320px;
+    width:320px;
+/*
+    top: -130px;
+    left: -130px;
+*/
+    margin:2px;
+    border: 2px solid coral; /*deepskyblue;*/
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.frontpage-category-photos img
+{
+    max-height:190px;
+    max-width:190px;
+}
+
+.frontpage-category-photos:hover img
+{
+    max-height:320px;
+    max-width:320px;
+}
+
+.frontpage-category-photos a
+{
+    position: relative;
+    display: block;
+    height:100%;
+}
+
+.frontpage-category-photos a div.category-img-wrapper
+{
+    position: relative;
+    display:inline-block;
+    vertical-align:middle;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+/*    height: calc(100% - 30px); */
+    height:100%;
+}
+
+.frontpage-category-photos a div.category-img-wrapper:before 
+{    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: calc(100% - 30px);
+}
+
+.frontpage-category-photos a div.category-name
+{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    background-color: #000;
+    color:#fff;
+    padding:3px;
+    box-sizing:border-box;
+}
+
+.frontpage-category-photos:hover a div.category-name
+{
+    color: coral; /* deepskyblue; */
+    font-size:1.1em;
+}
+
+.container-wrapper
+{
+    width: 100%;
+    background-color: rgb(58, 87, 149);
+    background: -webkit-linear-gradient(right, #3F3F3F, #676767);
+    background: -moz-linear-gradient(right, #3F3F3F, #676767);
+    background: -o-linear-gradient(right, #3F3F3F, #676767);
+    background: linear-gradient(to bottom, #3F3F3F, #676767);
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    body
+    {
+        top:150px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    body
+    {
+        top:205px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    body
+    {
+        top:105px;
+    }
+
+    .navbar-form
+    {
+        margin-left: 0;
+    }
+}

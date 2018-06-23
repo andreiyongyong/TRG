@@ -1,0 +1,227 @@
+/* This contains Rian's tweaks to the bootstrap CSS so it must be included after */
+
+/* Global Style.css */
+table {border-collapse: collapse; background-color: ghostwhite; border: 1px solid silver; padding:0; margin:0;}
+tr {vertical-align: top; border: #ccc;}
+td {font: 14px arial, helv;}
+th {background-color: rgba(129, 202, 255, 0.7); font-size: 85%; color: black; font-weight: bold; text-align:left; padding: 8px 12px 4px 4px;}
+h1,h2,h3,h4 {font-weight: bold;}
+h5,h6 {color: #456780; margin-bottom: 2px; margin-top: 0px;}
+form {margin-top: 0px; margin-bottom: 2px;}
+img {margin-bottom: 0px;}
+input {font: 9pt verdana,arial,helv; margin-top:3px; padding-left: 5px;}
+select {font: 9pt verdana,arial,helv; margin-top:3px;}
+button {margin-top:5px;}
+textarea {font: 9pt verdana,arial,helv;}
+/* Classes */
+.form {border: 1px solid silver; background-color: #F2F8FF;}
+.form td {padding: 4px 4px 2px 4px; vertical-align: middle;}
+.nowrap  {white-space: nowrap;}
+.heading {font: 18pt verdana, arial, helv; font-weight: bold; color: 410682; margin-bottom: 2px;}
+.header {color: navy; margin-bottom: -2px;}
+.head {padding-right: 0px; padding-left: 0px;}
+.bold {font-weight: bold;}
+.prompt {color: #778899; font-size: 105%;}
+.noborder {background-color: white; border-style: none; border-width: 0px; padding-left: 0px}
+.nopad {padding-left: 0px; padding-right: 0px;}
+.panel-heading { padding: 1px 8px 3px 10px; margin-top:1px; height:30px; padding-top: 5px}
+.panel-title {padding:0;}
+/* a {text-decoration: underline;} Bootstrap turns off all underlines but we may want them */
+.btn-med {height:28px; margin-top:0px; padding:2px 8px;}
+hr {margin-top:3px; border-top: 1px solid #bce8f1;}
+ul {padding-left: 20px;}
+pre {margin-bottom: 0; margin-left: 15px;}
+.bg-faded-blue {#4d5767;}
+.center {display: block; margin: 0 auto !important;}
+.nav-tabs>li>a {border: 1px solid beige; border-bottom-color: silver;}
+.nav-tabs>li.active>a {border: 1px solid #54c5ef !important; border-bottom-color: transparent !important;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {font-weight: bold;}
+input[type="checkbox"] {height: 14px; width:16px; margin: 4px 3px 0 0}
+input[type="checkbox"], .checkbox input[type="radio"] {opacity: 0.80; cursor: pointer; box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);}
+.btn-warning { background-image: linear-gradient(#ff6707, #e77246, #f38139);}
+.btn-primary { background-image: linear-gradient(#7cc5ef, #41afed 60%, #68a3c5); }
+.whiteback {background-color: white !important;}
+.navbar {border-radius: 0px;}   /* Rounded corners on top blue bar */
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:4px !important;}
+.navbar {min-height:20px !important;}
+.dropdown-menu {min-width:260px;}
+.padright {padding-right: 15px;}
+A:hover {color: rgba(0, 70, 199, 1);}   /* Make darker blue on hover */
+h3,h4 {margin-top: 4px; margin-bottom: 2px;} /* try and vertically center headings within panel blocks */ 
+.glyphicon {padding-right: 3px;}
+.input-sm {padding: 5px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); border: 1px solid #cccccc;
+    height: 28px;
+    -webkit-transition: border-color ease-in-out .3s,
+    -webkit-box-shadow ease-in-out .3s; 
+    -o-transition: border-color ease-in-out .3s,box-shadow ease-in-out .3s;
+       transition: border-color ease-in-out .3s,box-shadow ease-in-out .3s; } 
+.input-sm:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}
+select.input-sm {padding: 1px;} /* Much better padding for drop-downs (SELECT) */
+.panel .panel-heading {background-color: #d9edf7;} /* Just slightly lighter blue */
+.panel-info .panel-title {color: #31708f;}  /* Dark blue */
+.panel-info {border-color: #bce8f1;}        /* Light blue */
+.form-group {margin-bottom: 3px;}           /* Less space between fields */
+.panel-heading {margin-bottom: 12px; padding: 8px 10px 10px 8px;}
+.panel-body {padding: 8px; text-align:left;}
+.row {margin-left: 0px;} /* They make it -15px! */
+.pull-right {margin-top: -3px;}
+label {margin-top: 5px; color: #464646; font-family: Calibri;} /* Grey prompts */
+prompt {margin: 1px; font-family: Calibri; font-weight: 600; color: #31708f; display: inline-block; width: 140px;}
+textarea {margin-top: 3px; margin-bottom: -3px;}
+.row {margin-right:0px;}
+ul.nav,ul.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+input:-ms-input-placeholder {
+    color: #999; // Bug in IE 11
+}
+select.input-xs {font: 11px Calibri,arial;}
+.input-xs {
+    height: 22px;
+    border-radius: 3px;
+}
+/* Rian: This class simulates Material Design Lite Drop-Shadow */
+.box-shadow6 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+.box-shadow8 {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+.box-shadow12 {
+    box-shadow: 0 12px 18px 2px rgba(0, 0, 0, .14), 0 6px 22px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
+
+/* trying to make a sub-menu "fly-out" to the right on mouse hover over */
+.dropdown-submenu {
+    position: relative;
+}
+/* Rian: This styles the 2nd level menu just like Bootstrap does for the main menu */
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+/* Rian: This adds the > chevron to the right of the main menu. Bootstrap translates " " to the arrow */
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin: 5px -10px 0px;
+}
+/* On mouse-out change the background back to white from blue */
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+/* From http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3 */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/* RESULTS PAGES - SORTING */
+#main-content table td {padding: 8px;}
+
+/* ZEBRA STIPES - ONLY table s with class="stripe" */
+table.stripe {width: 100%;}
+table.stripe tbody tr:hover td {background-color: #FFFFF2 !important;}
+table.stripe thead th						/* Layout of the top header */
+{
+    border:1px solid silver;	
+    background-color: rgba(129, 202, 255, 0.7);
+    font:11px verdana,arial,helv;		    /* Font size */
+    font-weight: bold;
+    text-align:left;
+    padding: 8px 12px 4px 4px;
+    background-image: url(images/bg.gif);
+    background-position:right center;		/* up-down arrow position */
+    background-repeat:no-repeat;			/* up-down arrow no repeat */
+    cursor:pointer;
+}
+table.stripe thead td						/* Layout of the search line */
+{
+    border:1px solid #eef;				/* border color */
+    padding:2px;
+}
+table.stripe th						/* Layout of the search line */
+{
+    border:1px solid #ccc;				/* border color */
+}
+
+table.stripe tbody td						/* Layout of result lines within  */
+{
+    border:1px solid #eef;
+    padding: 4px;
+    font: 14px arial, helv;
+}
+table.stripe > tbody > tr:nth-of-type(odd) {
+  background-color: white;
+}
+
+table.stripe th .headerSortUp, .tablesorter-headerAsc {
+    /* background-image: url(images/asc.gif) !important; */
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALhJREFUeNpi/P//PwMhwILMiexYx8bIxNTy/9+/muUVQb9g4kzIitg4edI4+YRLQTSyOCPMupjerUI8whK3OXgEhH58+fDuy9sXqkuKvd+hmMTOxdvCxS8sxMUvxACiQXwU6+Im7DDg5BNKY+fiY2BmYWMA0SA+SByuiJ2bbzIHrwAzMxsb0AGMDCAaxAeJg+SZ7wtaqfAISfQAdTIwMUM8ywhUyMTEzPD/71+5FXvPLWUkJpwAAgwAZqYvvHStbD4AAAAASUVORK5CYII=') !important;
+    background-color:#B5E5FF !important;						/* high-light color */
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+table.stripe th .headerSortDown, .tablesorter-headerDesc {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALNJREFUeNpi/P//PwMhwBJf3uP879e3PUzMzBiS//7+ZWBi43JhBJmU2z7nIzMzEx8jIyNcAUj8799/nyZXpvCzgARYuXjTWBkZVjCzIEz7++cvw+//DGkgNiPMTWVT1l5hZvynDTINbMp/pqtdOcE6IDkmmM5fv3/5//v37z9QBQOIBvFhcnBFEwoj7/5jZFnz9+8fBhAN4sN9h+ybH9++JrGxscr/+vE1CVmckZhwAggwANvlUyq5Dd1wAAAAAElFTkSuQmCC') !important;
+  /* background-image: url(images/desc.gif) !important; */
+  background-color:#B5E5FF !important;
+  background-position:right center;
+  background-repeat:no-repeat;
+}
+
+th.tablesorter-headerSortUp:hover,
+th.tablesorter-headerAsc:hover {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALVJREFUeNpi/P//PwMhwILMCc+qZGNkYmr5/+9fzcpp7b9g4kzIitjYOdM4uXlLQTSyOCPMuqi8OiEefsHbHFzcQj++fX335eN71WWTmt6hmMTOwdXCycMnBDSJAUSD+CjWxRQ0GHBw86Sxc3AyMDOzMIBoEB8kDlfEzsk1mYOLByjPCnQAIwOIBvFB4iB55rsfmVS4+QV7QNYwMTNDHApUyMTExPDv/z+5Feu3L2UkJpwAAgwA244u+I9CleAAAAAASUVORK5CYII=') !important;
+	/* background-image: url(images/dropbox-asc-hovered.png); */
+}
+th.tablesorter-headerSortDown:hover,
+th.tablesorter-headerDesc:hover {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALNJREFUeNpi/P//PwMhwBJf3uP879e3PUzMzBiS//7+ZWBi43JhBJmU2z7nIzMzEx8jIyNcAUj8799/nyZXpvCzgARYuXjTWBkZVjCzIEz7++cvw+//DGkgNiPMTWVT1l5hZvynDTINbMp/pqtdOcE6IDkmmM5fv3/5//v37z9QBQOIBvFhcnBFEwoj7/5jZFnz9+8fBhAN4sN9h+ybH9++JrGxscr/+vE1CVmckZhwAggwANvlUyq5Dd1wAAAAAElFTkSuQmCC') !important;
+	/* background-image: url(images/dropbox-desc-hovered.png); */
+}
+thead .sorter-false {
+	cursor: default;
+}
+
+.jtooltip
+{
+    z-index:2;
+    padding:3px;
+    background: lemonchiffon;
+    position:absolute;
+    border:1px solid #ccc;
+}
